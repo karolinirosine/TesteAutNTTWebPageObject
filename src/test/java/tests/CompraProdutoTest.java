@@ -43,6 +43,7 @@ public class CompraProdutoTest {
         Screenshot.tirarPrint(driver, featureName, "produto_selecionado");
         Log.escreverLog(featureName,"Produto selecionado: " + produto);
 
+        product.fecharModalSale();
         precoSacola = product.pegarPreco();
         home.aceitarCookies();
         product.adicionarAoCarrinho();
